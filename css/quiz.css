@@ -1,0 +1,183 @@
+body {
+    background: url("https://guaranifc.com.br/wp-content/uploads/2025/01/IMG_9590-768x321.png") no-repeat center center;
+    background-size: cover;
+    font-family: "Gabarito", sans-serif;
+    margin: 20px;
+  }
+  
+  
+  /* Caixa principal do jogo */
+  .conteudo-jogo {
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 5px #05f50d;
+    margin: 30px;
+    padding: 20px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .conteudo-jogo:hover {
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 5px #55985d;
+  }
+  
+  /* Títulos e textos */
+  h2,
+  p {
+    text-align: center;
+    color: white;
+  }
+  
+  /* Estrutura do questionário */
+  .questionario {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 70%;
+    max-width: 70%;
+  }
+  
+  /* Área de conteúdo */
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    gap: 20px;
+  }
+  
+  /* Estilo da pergunta */
+  .pergunta {
+    font-weight: 600;
+    font-size: large;
+    color: white;
+  }
+  
+  /* Progresso da pergunta */
+  .progresso {
+    text-align: end;
+    font-size: small;
+    font-weight: 500;
+    color: white;
+  }
+  
+  /* Área das respostas */
+  .respostas {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  /* Botões de resposta */
+  .botao-resposta {
+    width: 100%;
+    height: 3rem;
+    text-align: start;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    background: #55985d;
+    color: white;
+  }
+  
+  .botao-resposta:hover {
+    background: #19caca;
+    font-weight: 600;
+  }
+  
+  /* Tela de fim do jogo */
+  .fim {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .fim span {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+  }
+  
+/*Minhas modificações*/
+  .botoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #reset {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00ff73;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #00ff73;
+    transition: all 0.3s ease;
+  }
+  
+  #reset:hover {
+    background-color: #00cc5c;
+    box-shadow: 0 0 10px #00cc5c;
+  }
+
+  .header{
+    background-color:rgba(37, 161, 33, 0.2);
+    color: white;
+    width: calc(100% + 40px); /* 2x body margin de 20px */
+    margin-left: -20px; /* negativo para compensar a margem do body */
+    margin-right: -20px;
+    margin-top: -20px;
+    padding: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .footer{
+    width: calc(100% + 40px); /* 2x body margin de 20px */
+    margin-left: -20px; /* negativo para compensar a margem do body */
+    margin-right: -20px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    text-align: center;
+    background-color:rgba(37, 161, 33, 0.2);
+    box-sizing: border-box;
+  }
+
+  a{
+    color: #05f50d;
+    text-decoration:none
+  }
+
+a:hover{
+    color: #55985d;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes bounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.botao-correto {
+  animation: bounce 0.4s ease;
+}
+
+.botao-errado {
+  animation: shake 0.4s ease;
+}
+
