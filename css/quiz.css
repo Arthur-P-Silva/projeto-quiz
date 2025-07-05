@@ -86,6 +86,7 @@ body {
   .botao-resposta:hover {
     background: #19caca;
     font-weight: 600;
+    transition: 0.3s;
   }
   
   /* Tela de fim do jogo */
@@ -125,6 +126,7 @@ body {
   #reset:hover {
     background-color: #00cc5c;
     box-shadow: 0 0 10px #00cc5c;
+    transition: 0.5s;
   }
 
   .header{
@@ -150,7 +152,7 @@ body {
     box-sizing: border-box;
   }
 
-  a{
+a{
     color: #05f50d;
     text-decoration:none
   }
